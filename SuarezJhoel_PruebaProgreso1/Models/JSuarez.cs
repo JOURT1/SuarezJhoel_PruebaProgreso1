@@ -16,9 +16,8 @@ namespace SuarezJhoel_PruebaProgreso1.Models
 
         [AllowNull]
         [EmailAddress]
-        public string Correo { get; set; }
+        public string? Correo { get; set; }
 
-        [Range(0, 100)]
         public double DineroDisponibloe { get; set; }
 
         public Boolean Donante_de_organos { get; set; }
