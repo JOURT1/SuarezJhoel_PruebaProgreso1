@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.InteropServices;
 
@@ -18,11 +19,14 @@ namespace SuarezJhoel_PruebaProgreso1.Models
         public string Correo { get; set; }
 
         [Range(0, 100)]
-        public decimal Edad { get; set; }
+        public double Edad { get; set; }
 
         public Boolean Donante_de_organos { get; set; }
 
         public DateOnly FechaNaciemiento { get; set; }
 
+        [ForeignKey("Celular")]
+        public int IdCelular { get; set; }
+        public Celular? Celular { get; set; }
     }
 }
