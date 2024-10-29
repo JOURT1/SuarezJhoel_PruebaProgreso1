@@ -19,11 +19,11 @@ namespace SuarezJhoel_PruebaProgreso1.Models
         public string Correo { get; set; }
 
         [Range(0, 100)]
-        public double Edad { get; set; }
+        public double DineroDisponibloe { get; set; }
 
         public Boolean Donante_de_organos { get; set; }
 
-        public DateOnly FechaNaciemiento { get; set; }
+        public DateTime FechaNaciemiento { get; set; }
 
         [ForeignKey("Celular")]
         public int IdCelular { get; set; }

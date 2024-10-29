@@ -9,7 +9,7 @@ namespace SuarezJhoel_PruebaProgreso1.Models
         [Required]
         [MaxLength(50)]
         public string Modelo { get; set; }
-        public DateOnly año { get; set; }
+        public DateTime año { get; set; }
 
         public double Precio { get; set; }
     }
